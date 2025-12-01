@@ -1,0 +1,10 @@
+table, td, th {border-collapse:collapse; border:black 2px solid;empty-cells:hide;text-align:center; empty-cells:hide; }
+td.SSP{background-color:lightsalmon;}
+td.ING{background-color:forestgreen;}
+td.IPE{background-color:turquoise;}
+td.CD{background-color:violet;}
+td.LMAR{background-color:bisque;}
+td.SINF{background-color:lightgreen;}
+td.BD{background-color:orange;}
+td.PROG{background-color:skyblue;}
+td.recreo{background-color:black;color:white;}

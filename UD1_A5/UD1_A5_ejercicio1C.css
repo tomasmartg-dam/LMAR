@@ -1,0 +1,27 @@
+	/* El párrafo que sigue al encabezado h1 debe estar en cursiva y color navy */
+	
+	h1 + p{color:navy;font-style:oblique;}
+
+	/* Los párrafos que son hijos únicos deben ser de color darkgreen */
+	
+	p:only-child{color:darkgreen;}
+	
+	/* La primera línea de los párrafos del div debe estar un poco más grande y en negrita. */
+	
+	div p:first-line{font-size:1.5em;font-weight:bold;}
+	
+	/* La primera línea del primero de los párrafos del div debe tenr color de fondo lightblue y estar en cursiva. */
+	
+	div p:first-of-type:first-line{background-color:lightblue;font-style:oblique}
+	
+	/* Lo que está escrito en gallego en el documento debe estar alineado a la derecha y en color coral*/
+	
+	*:lang(gl){text-align:right;color:coral;}
+	
+	/* Incluye el texto "3 refranes de " precediendo a Primavera y Otoño */
+	
+	h2:before{content:"3 refranes de "}
+	
+	/* Impide que se puedan seleccionar los refranes */
+	
+	li{user-select:none}

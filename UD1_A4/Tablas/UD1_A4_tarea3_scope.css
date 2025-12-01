@@ -1,0 +1,6 @@
+table, td, th {border-collapse:collapse; border:grey 2px solid;empty-cells:hide;text-align:center;}
+colgroup.edad{background-color:#BBBBFF}
+colgroup.hombres1{background-color:#AAFFAA}
+colgroup.hombres2{background-color:#BBFFBB}
+colgroup.mujeres2{background-color:#FFCCCC}
+colgroup.mujeres1{background-color:#FFBBBB}

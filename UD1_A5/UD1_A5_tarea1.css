@@ -1,0 +1,24 @@
+*{font-family:Arial}
+
+h1{font-family:"Arial Narrow";letter-spacing:0.777em;color:maroon;}
+
+h2:after{content:" !!!";}
+h2{color:mediumseagreen;text-indent:0.5em;}
+
+p:first-line{font-style:oblique;color:#444432;}
+
+a:link{text-decoration:none;color:black;}
+a:hover{color:seagreen;text-decoration:underline;}
+
+article:first-of-type li:nth-child(even){background-color:lightcoral;}
+article:first-of-type li:nth-child(odd){background-color:papayawhip;}
+
+li{padding:0.2em; list-style:none;margin-bottom:0.2em;}
+
+ul{list-style-type:none;}
+
+article:last-of-type li:nth-child(odd){background-color:papayawhip;}
+article:last-of-type li:first-of-type{color:blue;}
+article:last-of-type li:nth-of-type(3){color:orange;font-size:1.5em;}
+article:last-of-type li:nth-child(even){color:maroon;font-size:2.5em;}
+article:last-of-type li:last-of-type{color:seagreen;font-size:3.5em;}

@@ -1,0 +1,9 @@
+h1{background-color:darkblue; color:white;font-variant:small-caps;margin-left:15px;}
+p:first-of-type{color:darkblue; font-weight:bold;}
+div ul li ul li ul{color:darkblue;}
+div ul li ul{color:orange;}
+div ul {color:teal;}
+li{margin-left:15px;}
+p{margin-left:15px;}
+h2{background-color:orange;color:black;text-indent:0.8;margin-left:15px}
+h2 + ul{font-style:oblique;}

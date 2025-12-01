@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- Ejercicio de creacción de una tabla -->
+		<style>
+			*{font-family:Arial; Helvetica; sans-serif}
+			
+			table, td, th{margin:0 auto; border: green 2px solid ; border-collapse:collapse; empty-cells:hide;}
+			thead{text-align: center; color:#88AA44;border: #373 5px solid;}
+			thead ~ td,th{border: #373 5px solid;}
+			p{text-align:center; color: green; font-style:oblique;}
+			tfoot{text-align:center;}
+			tbody:nth-of-type(1){background-color:#FFFFCC;}
+			caption{caption-side:bottom; color:green; font-style:oblique;}
+			
+		</style>
+	</head>
+	<body>
+		<table class="tabla">
+			<colgroup class="NotasDelAlumno"/>
+			<colgroup class="NotasAvaliacion"/>
+			<colgroup class="NotaFinal"/>
+			<thead>
+				<tr>
+					<th rowspan="2" scope="col">Notas</th>
+					<th colspan="3" scope="col">Avaliación</th>
+					<th rowspan="2" scope="col">Final</th>
+				</tr>
+				<tr>
+					<th scope="col">Primeira</th>
+					<th scope="col">Segunda</th>
+					<th scope="col">Terceira</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">Ximena</th>
+					<td>6</td>
+					<td>9</td>
+					<td>8</td>
+					<td>8</td>
+				</tr>
+				<tr>
+					<th scope="row">Mario</th>
+					<td>5</td>
+					<td>5</td>
+					<td>5</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<th scope="row">Sabela</th>
+					<td>10</td>
+					<td>9</td>
+					<td>10</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<th scope="row">Xoan</th>
+					<td>7</td>
+					<td>5</td>
+					<td>6</td>
+					<td>6</td>
+				</tr>
+				<tr>
+					<th scope="row">Alejandro</th>
+					<td>9</td>
+					<td>6</td>
+					<td>7</td>
+					<td>7</td>
+				</tr>
+				<tr>
+					<td colspan="4" scope="col">Nota media</td>
+					<td>7.2</td>
+				</tr>
+			</tbody>
+					<caption>Notas do curso 2022/2023</caption>
+		</table>
+		
+	</body>
+</html>

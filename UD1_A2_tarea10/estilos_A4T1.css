@@ -1,0 +1,8 @@
+	footer p{color:teal; font-size:1.75em;font-family:"Arial Narrow"; text-indent:0.5em;background-color:black;}
+	h1 ~ a + p  {color:purple; text-transform:capitalize;font-family:Arial;}
+	h1 {font-weight:bold; font-variant:small-caps; font-size:175%;}
+	p.editorial {font-size:2em;color:white;background-color:red;text-transform:uppercase;text-align:center;}
+	h2 ~ p  {color:grey;font-size:1.75em;text-align:right;}
+	h2 {background-color:pink; color:green; text-align:center}
+	*{text-indent:5em}
+	h1{color:bisque;background-color:yellow;text-align:center}
