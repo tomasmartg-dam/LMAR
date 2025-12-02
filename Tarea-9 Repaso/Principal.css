@@ -16,7 +16,6 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-
 }
 
 .header {
@@ -93,7 +92,9 @@ body {
     height: 100%;
     justify-self: center;
     width: auto;
-
+    text-align: center;
+    margin: auto;
+    justify-items: stretch;
 }
 
 .image-stack {
