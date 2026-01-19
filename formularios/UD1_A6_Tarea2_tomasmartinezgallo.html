@@ -1,73 +1,163 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>Cuestionario de HTML</title>
-    <link rel="stylesheet" type="text/css" href="./UD1_A6_Tarea2_tomasmartinezgallo.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #444444;
+            max-width: 700px;
+            margin: 20px auto;
+        }
+
+        h1 {
+            font-family: Verdana, sans-serif;
+            color: #AD6FA0;
+        }
+
+        ol.listaPrincipal {
+            color: #9D9FF9;
+            font-weight: bold;
+            padding-left: 20px;
+        }
+
+        ol.listaPrincipal>li {
+            margin-bottom: 20px;
+        }
+
+        ol.listaPrincipal>li::marker {
+            color: #9D9FF9;
+        }
+
+        .eldiv {
+            border: 1px solid #9D9FF9;
+            padding: 15px;
+            color: #444444;
+            font-weight: normal;
+        }
+
+        .enunciado {
+            color: #9D9FF9;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        ol.pregunta {
+            list-style-type: lower-alpha;
+            margin-top: 5px;
+        }
+
+        ol.pregunta li {
+            margin-bottom: 5px;
+        }
+
+        input[type="text"] {
+            border: 1px solid #ccc;
+            padding: 4px;
+        }
+
+        textarea {
+            width: 98%;
+            height: 120px;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+        }
+
+        .filaCheckbox {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .areaBotones {
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #E8E8E8;
+            border: 1px solid #B0B0B0;
+            color: #AD6FA0;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+    </style>
 </head>
 
 <body>
     <h1>Cuestionario de HTML</h1>
     <form>
-        <ol>
+        <ol class="listaPrincipal">
             <li>
-                <p>Las etiquetas &lt;ol&gt; y &lt;li&gt; se emplean para crear</p>
-                <div>
-                    <input type="radio" name="pregunta1" id="respuesta">
-                    <label for="respuesta">Una tabla</label>
-                </div>
-                <div>
-                    <input type="radio" name="pregunta1" id="respuesta">
-                    <label for="respuesta">Una lista ordenada</label>
-                </div>
-                <div>
-                    <input type="radio" name="pregunta1" id="respuesta">
-                    <label for="respuesta">Una lista desordenada</label>
+                <div class="eldiv">
+                    <span class="enunciado">Las etiquetas &lt;ol&gt; y &lt;li&gt; se emplean para crear</span>
+                    <ol class="pregunta">
+                        <li><label><input type="radio" name="p1"> Una tabla</label></li>
+                        <li><label><input type="radio" name="p1"> Una lista ordenada</label></li>
+                        <li><label><input type="radio" name="p1"> Una lista desordenada</label></li>
+                    </ol>
                 </div>
             </li>
             <li>
-                <p>En HTML, para definir que el idioma principal de una página sea el español se emplea</p>
-                <input type="radio" name="pregunta2" id="respuesta">
-                <label for="respuesta">&lt;html lang="es"&gt;</label>
-                <input type="radio" name="pregunta2" id="respuesta">
-                <label for="respuesta">&lt;head id="es"&gt;</label>
-                <input type="radio" name="pregunta2" id="respuesta">
-                <label for="respuesta">&lt;head lang="es"&gt;</label>
+                <div class="eldiv">
+                    <span class="enunciado">En HTML, para definir que el idioma principal de una página es el español se
+                        emplea</span>
+                    <ol class="pregunta">
+                        <li><label><input type="radio" name="p2"> &lt;html lang="es"&gt;</label></li>
+                        <li><label><input type="radio" name="p2"> &lt;head id="es"&gt;</label></li>
+                        <li><label><input type="radio" name="p2"> &lt;head lang="es"&gt;</label></li>
+                    </ol>
+                </div>
             </li>
             <li>
-                <p>Indica que etiqueta se usa en HTML para definir el título de una tabla:</p>
-                <input type="text" name="pregunta3" id="respuesta">
+                <div class="eldiv">
+                    <span class="enunciado">Indica que etiqueta se usa en HTML para definir el título de una
+                        tabla:</span>
+                    <input type="text" name="p3">
+                </div>
             </li>
             <li>
-                <p>¿Qué define la etiqueta &lt;td&gt; en HTML?</p>
-                <input type="radio" name="pregunta4" id="respuesta">
-                <label for="respuesta">Una fila en una tabla</label>
-                <input type="radio" name="pregunta4" id="respuesta">
-                <label for="respuesta">Un elemento de una lista de definición</label>
-                <input type="radio" name="pregunta4" id="respuesta">
-                <label for="respuesta">Una celda en una tabla</label>
+                <div class="eldiv">
+                    <span class="enunciado">¿Qué define la etiqueta &lt;td&gt; en HTML?</span>
+                    <ol class="pregunta">
+                        <li><label><input type="radio" name="p4"> Una fila en una tabla</label></li>
+                        <li><label><input type="radio" name="p4"> Un elemento de una lista de definición</label></li>
+                        <li><label><input type="radio" name="p4"> Una celda en una tabla</label></li>
+                    </ol>
+                </div>
             </li>
             <li>
-                <p>Describe cómo se puede incluir el estilo CSS en una página HTML:</p>
-                <textarea name="pregunta5" id="respuesta"></textarea>
+                <div class="eldiv">
+                    <span class="enunciado">Describe cómo se puede incluir el estilo CSS en una página HTML:</span>
+                    <textarea name="p5"></textarea>
+                </div>
             </li>
             <li>
-                <p>Selecciona las afirmaciones que son verdaderas:</p>
-                <input type="checkbox" name="pregunta6" id="respuesta">
-                <label for="respuesta">En HTML, para crear un hipervínculo se usa la etiqueta &lt;href&gt;.</label>
-                <input type="checkbox" name="pregunta6" id="respuesta">
-                <label for="respuesta">Los elementos de una lista desplegable se definen con li.</label>
-                <input type="checkbox" name="pregunta6" id="respuesta">
-                <label for="respuesta">Los atributos&lt;rowspan&gt; y &lt;colspan&gt; son atributos de la etiqueta
-                    div.</label>
-                <input type="checkbox" name="pregunta6" id="respuesta">
-                <label for="respuesta">Las etiquetas &lt;h1&gt; y &lt;h2&gt; se usan para definir encabezados.</label>
-                <input type="checkbox" name="pregunta6" id="respuesta">
-                <label for="respuesta">La etiqueta &lt;ol&gt; debe ir definida dentro de la etiqueta &lt;li&gt;</label>
-                <input type="checkbox" name="pregunta6" id="respuesta">
-                <label for="respuesta">La etiqueta &lt;li&gt; debe ir definida dentro de la etiqueta &lt;ul&gt;</label>
+                <div class="eldiv">
+                    <span class="enunciado">Selecciona las afirmaciones que son verdaderas:</span>
+                    <label class="filaCheckbox"><input type="checkbox"> En HTML, para crear un hipervínculo se usa la
+                        etiqueta &lt;href&gt; .</label>
+                    <label class="filaCheckbox"><input type="checkbox"> Los elementos de una lista desplegable se
+                        definen con li.</label>
+                    <label class="filaCheckbox"><input type="checkbox"> Los atributos &lt;rowspan&gt; y &lt;colspan&gt;
+                        son atributos de la etiqueta div.</label>
+                    <label class="filaCheckbox"><input type="checkbox"> Las etiquetas &lt;h1&gt; y &lt;h2&gt; se usan
+                        para definir encabezados.</label>
+                    <label class="filaCheckbox"><input type="checkbox"> La etiqueta &lt;ol&gt; debe ir definida dentro
+                        de la etiqueta &lt;li&gt;.</label>
+                    <label class="filaCheckbox"><input type="checkbox"> La etiqueta &lt;li&gt; debe ir definida dentro
+                        de la etiqueta &lt;ul&gt;.</label>
+                </div>
             </li>
         </ol>
+        <div class="areaBotones">
+            <button type="reset">Limpiar</button>
+            <button type="button">Comprobar</button>
+        </div>
     </form>
 </body>
 
