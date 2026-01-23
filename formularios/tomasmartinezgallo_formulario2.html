@@ -13,17 +13,20 @@
             <div class="fila">
                 <label for="Nombre"></label>
                 <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required
-                    title="Por favor, introduce tu nombre">
+                    title="Por favor, introduce tu nombre" maxlength="20"
+                    pattern="[A-ZÑÁÉÍÓÚ][a-zñáéíóú]+(\s[A-ZÑÁÉÍÓÚa-z][a-zñáéíóú]){1,}">
             </div>
             <div class="fila">
                 <label for="Primer Apellido"></label>
                 <input type="text" id="apellido1" name="apellido1" placeholder="Escribe tu primer apellido" required
-                    title="Por favor, introduce tu primer apellido">
+                    title="Por favor, introduce tu primer apellido" maxlength="20"
+                    pattern="[A-ZÑÁÉÍÓÚ][a-zñáéíóú]+(\s[A-ZÑÁÉÍÓÚa-z][a-zñáéíóú]){1,}">
             </div>
             <div class="fila">
                 <label for="Segundo Apellido"></label>
                 <input type="text" id="apellido2" name="apellido2" placeholder="Escribe tu segundo apellido" required
-                    title="Por favor, introduce tu segundo apellido">
+                    title="Por favor, introduce tu segundo apellido" maxlength="20"
+                    pattern="[A-ZÑÁÉÍÓÚ][a-zñáéíóú]+(\s[A-ZÑÁÉÍÓÚa-z][a-zñáéíóú]){1,}">
             </div>
             <div class="fila">
                 <label for="Teléfono"></label>
@@ -38,4 +41,5 @@
         </fieldset>
     </form>
 </body>
+
 </html>

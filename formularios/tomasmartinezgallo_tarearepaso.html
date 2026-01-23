@@ -1,0 +1,49 @@
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estafa Llados</title>
+    <style>
+        fieldset {
+            display: grid;
+            grid-column: auto;
+            grid-template: repeat(2);
+        }
+
+        div {}
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <div id="div">
+                <label for="nombre">Nombre *</label>
+                <input type="text" name="Nombre" id="Nombre" placeholder="Escribe tu nombre" required maxlength="20"
+                    pattern="[A-ZÑÁÉÍÓÚ][a-zñáéíóú]+(\s[A-ZÑÁÉÍÓÚa-z][a-zñáéíóú]){1,}">
+            </div>
+            <div id="div">
+                <label for="Apellidos*">Apellidos *</label>
+                <input type="text" name="Apellidos" id="Apellidos" placeholder="Escribe tus apellidos" required
+                    maxlength="30" pattern="[A-ZÑÁÉÍÓÚ][a-zñáéíóú]+(\s[A-ZÑÁÉÍÓÚa-z][a-zñáéíóú]){1,}">
+            </div>
+            <div id="div">
+                <label for="Email">Email *</label>
+                <input type="text" name="Email" id="Email" placeholder="correo@dominio.com" required>
+            </div>
+            <div id="div">
+                <label for="Empresa">Empresa</label>
+                <input type="text" name="EMpresa" id="empresa"
+                    placeholder="Escribe el nombre de la empresa de la que formas parte">
+            </div>
+            <div id="div">
+                <label for="Cargo">Cargo</label>
+                <input type="text" name="Cargo" id="Cargo"
+                    placeholder="Escribe el cargo que posees dentro de la empresa de la que formas parte">
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
