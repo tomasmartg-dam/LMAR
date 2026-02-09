@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="gl">
+    <head>
+        <meta charset="utf-8">
+        <title>Exercicio 1 - Condicionais</title>
+    </head>
+    <body>
+        <div>
+            <p>Solución exercicio</p>
+            <input type="number" id="n1" placeholder="Num1">
+            <input type="number" id="n2" placeholder="Num2">
+            <input type="number" id="n3" placeholder="Num3">
+        </div>
+        <div>
+            <button oneclick="resolver()">Calcular</button>
+        </div>
+        <div>
+            <script>
+                function mostrar(texto) {
+                document.getElementByID('resultado').innerText=texto;
+                }
+                function resolver() {
+                    const V1=parseInt(document.getElementById('n1').value);
+                    const V2=parseInt(document.getElementById('n2').value);
+                    const V3=parseInt(document.getElementById('n3').value);
+                    mostrar(V1>10?"É maior que 10":"Non é maior que 10");//1
+                    mostrar(V1>V2?"O pimeiro é maior":"O segundo é maior");//2
+                    mostrar(V1%2==0?"É par":"É impar");//3
+                    mostrar((V1>10&&V2>10)?"Os dous son maiores que 10":"Os dous non son maiores que 10");//4
+                    mostrar();//5
+                    mostrar();//6
+                    mostrar();//7
+                    mostrar();//8
+                    mostrar();//9
+                    mostrar();//10
+                    mostrar();//11
+                    mostrar();//12
+                    mostrar();//13
+                }
+            </script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="gl">
+    <head>
+        <meta charset="utf-8">
+        <title>Exercicio 1</title>
+    </head>
+    <body>
+        <script>
+            let n1=prompt("Dime o valor do primeiro número");
+            let n2=prompt("Dime o valor do segundo número");
+            let n3=prompt("Dime o valor do terceiro número");
+
+            //1
+            if (n1>10) {
+                alert("É maior que 10")
+            }else{
+                alert("Non é maior que 10")
+            }
+        
+            //2
+            if (n1>n2) {
+                alert("O primeiro é maior")
+            }else{
+                alert("O segundo é maior")
+            }
+
+            //3
+            if (n1%2==0) {
+                alert("É par")
+            }else{
+                alert("É impar")
+            }
+
+            //4
+            if (n1>10&&n2>10) {
+                alert("Ambos son maiores que 10")
+            } else {
+                alert("Ambos non son maiores que 10")
+            }
+
+            //5
+            if (n1>10||n2>10) {
+                alert("Al menos un é maior que 10")
+            } else {
+                alert("Ningún é maior que 10")
+            }
+            
+            //6
+            if (n1>=10&&n1<=20) {
+                alert("O número está comprendido entre 10 e 20 ")
+            } else {
+                alert("O número non está comprendido entre 10 e 20")
+            }
+
+            //7
+            if (n1>10) {
+                alert("O primeiro é maior que 10")
+            } else if(n2<10){
+                alert("O segundo é maior que 10")
+            }else{
+                alert("Ningún é maior que 10")
+            }
+
+            //8
+            if (n1>n2) {
+                alert("O primeiro é maior")
+            } else if(n1<n2){
+                alert("O segundo é maior")
+            }else{
+                alert("Ambos son iguais")
+            }
+
+            //9
+            if (n2==0) {
+                alert("Non podes dividir entre 0")
+            } else if((n1%n2)==0){
+                alert("O primeiro é divisible polo segundo")
+            }else{
+                alert("O primeiro non é divisible polo segundo")
+            }
+
+            //10
+            let menor=0;
+            let mayor=0;
+            if (n1>n2) {
+                menor=n2;
+                mayor=n1;
+            } else {
+                menor=n1;
+                mayor=n2;
+            }
+            if (menor==0) {
+                alert("Non podes dividir por 0")
+            }else if((mayor%menor)==0){
+                alert("O maior é divisible polo menor")
+            }else{
+                alert("O maior non é divisible polo menor")
+            }
+
+            //11
+            if (n1%2!==0) {
+                alert("Non é divisble por 2")
+            } else if(n1%10==0){
+                alert("É divisible por 10 pero non por 3")
+            }else if(n1%30!==0){
+                alert("Non é divisible por 3 e 10")
+            }
+
+            if(n1%3==0){
+                alert("É divisible por 3 pero non por 10")
+            }else if(n1%30!==0){
+                alert("Non é divisible por 3 e 10")
+            }
+
+            //12
+            if (n1>0||n2>0||n3>0) {
+                alert("Al menos un é maior que 0")
+            } else {
+                alert("Ningún é maior que 0")
+            }
+
+            //13
+            
+
+        </script>
+    </body>
+</html>

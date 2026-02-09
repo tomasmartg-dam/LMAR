@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Pruebas</title>
+    <style>
+        body {
+            background-color: rgb(198, 227, 245);
+        }
+
+        div {
+            margin: 0 auto;
+            width: 50%;
+            border: dotted 2px red;
+            padding: 1em 1em;
+            background-color: rgb(255, 215, 207);
+        }
+
+        h1 {
+            background-color: red;
+            color: white;
+            width: max-content;
+            margin: 0 auto;
+        }
+
+        footer p {
+            font-style: italic;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        let nom = prompt("Tu nombre es:");
+        let dni = prompt("Tu DNI: ");
+    </script>
+    <div>
+        <script>
+            document.write(
+                "<h1>" + nom + ", dámosche a benvida ao noso sistema </h1>",
+            );
+        </script>
+
+        <p>Gardaremos no sistema os seguintes datos:</p>
+        <script>
+            document.writeln(
+                "<ul><li>Nome: " + nom + "</li> <li>DNI: " + dni + "</li></ul>",
+            );
+        </script>
+    </div>
+    <footer>
+        <p>IES Chan do monte</p>
+    </footer>
+</body>
+
+</html>

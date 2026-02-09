@@ -1,0 +1,25 @@
+*{
+		font-family: "Arial" , "comic-sans";
+	}
+body{
+	background-color:PowderBlue;
+}
+h1{
+		font-variant:small-caps;
+	}
+form{
+		min-width:480px;
+		max-width:580px;
+		align-items:center;
+		display:flex;
+		flex-direction:column;
+		background-color:CadetBlue;
+		margin:10px auto;
+		padding:20px;
+	}
+div.dato{
+	background-color:PowderBlue;
+}
+input:required{
+		border: red 2px solid;
+	}
